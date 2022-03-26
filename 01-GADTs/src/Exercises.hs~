@@ -381,4 +381,4 @@ data TypeAlignedList a b where
 
 composeTALs :: TypeAlignedList b c -> TypeAlignedList a b -> TypeAlignedList a c
 composeTALs ys TANil = ys
-composeTALs ys (TACons x xs) = TACons x (composeTALs ys xs)
+composeTALs ys (TACons x xs) = TACons x (_a)
